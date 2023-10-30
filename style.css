@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    background-color: beige;
+}
+
+.heading{
+    margin-top: 1.5em;
+    margin-bottom: 20px;
+    font-size: 3em;
+    letter-spacing: 4px;
+    color: darkseagreen;
+    text-shadow: 5px 5px 3px rgba(0,0,0,0.3);
+}
+
+
+
+.dice-image{
+    font-size: 7em;
+    position: sticky;
+    top: 0;
+    margin: 20px auto;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-color:beige;
+}
+
+.dice-animation{
+    animation-name:shake;
+}
+
+@keyframes shake {
+   0%{
+    transform: rotateY(0deg) rotateX(0deg);
+   } 
+
+   100%{
+    transform: rotateY(720deg) rotateY(720deg);
+   }
+}
+
+.button{
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    position: sticky;
+    top: 150px;
+    background-color: rgb(20, 177, 132);
+    font-weight: 800;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    transition:all .5s ease ;
+}
+
+.button:hover{
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+    background-color: rgb(18, 94, 94);
+    color: aliceblue;
+}
+
+.history{
+    font-size: 1.5em;
+    margin: 5px;
+    
+}
+
+.show-history{
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: rgb(20, 177, 132);
+    font-weight: 800;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    transition:all .5s ease ;
+}
+
+.show-history:hover{
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+    background-color: rgb(18, 94, 94);
+    color: aliceblue;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: .2em auto;
+}
+
+li{
+    padding: .5em;
+    background-color: rgb(227, 224, 224);
+    margin: .5em;
+    border-radius: 5px;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span{
+    font-size: 1.5em;
+    margin-right: .5em;
+}
+
+.hide-history{
+    display: none;
+    
+}
